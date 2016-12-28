@@ -58,7 +58,8 @@ Muchas gracias por su gran trabajo con la [plantilla](https://github.com/syaning
 
 
 
-## License
+## Licencia
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Este proyecto esta bajo la licencia MIT - puedes vera en [LICENSE.md](LICENSE.md) para los detalles.
+
 
