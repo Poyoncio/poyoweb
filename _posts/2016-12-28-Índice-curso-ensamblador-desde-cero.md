@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso ensamblador desde cero 
+title: Índice curso ensamblador desde cero 
 date: 2016-12-28
 ---
 --------------------
