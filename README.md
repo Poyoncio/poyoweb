@@ -17,32 +17,32 @@ Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
 
 ### Instalación
 
-  **1.** [Instala ruby](https://www.ruby-lang.org/es/documentation/installation/)  
+    **1.** [Instala ruby](https://www.ruby-lang.org/es/documentation/installation/)  
   
   
-  **2.** [Instala ruby on rails](http://www.rubyonrails.org.es/instala.html)
+    **2.** [Instala ruby on rails](http://www.rubyonrails.org.es/instala.html)
   
   
-  **3.** Instala la gema jekyll mediante la terminal:
+    **3.** Instala la gema jekyll mediante la terminal:
       ```
       $gem install jekyll
       ``` 
   
   
-  **3.** Descarga poyoweb:
+    **3.** Descarga poyoweb:
        
        ![](images/descarga-blog.png)
   
   
   
-  **4.** Entra en la carpeta "poyoweb" y instala las gemas necesarias:
+    **4.** Entra en la carpeta "poyoweb" y instala las gemas necesarias:
       ```
       $bundle install
       ``` 
   
   
   
-  **5.** Ejecuta el servidor de jekyll y accede a  http://127.0.0.1:4000/: 
+    **5.** Ejecuta el servidor de jekyll y accede a  http://127.0.0.1:4000/: 
       ```
       $jekyll server 
       ```
