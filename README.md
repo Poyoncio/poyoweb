@@ -2,8 +2,8 @@
 # WWW.POYONCIO.COM
 Instalacion del blog para leer offline:
 
-  1. Descargar codigo fuente
+    -1. Descargar codigo fuente
   
   ![](images/descarga-blog.png)
   
-  2. Instala 
+    -2. Instala 
