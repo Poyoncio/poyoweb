@@ -23,7 +23,7 @@ Para instalar poyoweb con exito es necesario tener las siguientes dependecias:
   ```
   
   3. Descarga poyoweb:
-  ![](images/descarga-blog.png)
+    ![](images/descarga-blog.png)
   
   4. Entra en la carpeta "poyoweb" y instala las gemas necesarias:
   ```
@@ -34,7 +34,7 @@ Para instalar poyoweb con exito es necesario tener las siguientes dependecias:
   ```
       $jekyll server 
   ```
-__Y listo, ya lo tendras instalado:
+Y listo, ya lo tendras instalado:
 ![](images/captura-local.png)
 
 ## Running the tests
