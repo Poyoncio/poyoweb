@@ -31,7 +31,7 @@ Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
   
   **4.** Descarga poyoweb:
        
-       ![](images/descarga-blog.png)
+![](images/descarga-blog.png)
   
   
   
