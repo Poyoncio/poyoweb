@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso ensamblador desde cero parte 00: Introducción
+title: Curso ensamblador desde cero 
 date: 2016-12-28
 ---
 --------------------
