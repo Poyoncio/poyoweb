@@ -35,8 +35,7 @@ Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
   
   
   
-  **5.** Entra en la carpeta "poyoweb" y instala las gemas necesarias:
-      
+  **5.** Entra en la carpeta "poyoweb" y instala las gemas necesarias:      
       ```
       $bundle install
       ``` 
@@ -44,10 +43,9 @@ Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
   
   
   **6.** Ejecuta el servidor de jekyll y accede a  http://127.0.0.1:4000/: 
-     
-     ```
-      $jekyll server 
       ```
+      $jekyll server
+      ``` 
       
       
 Y listo, ya lo tendrás instalado:
