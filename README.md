@@ -1,7 +1,6 @@
-# poyo.github.io
-# poy.github.io
-# poyo.github.io
-# poyoo.github.io
-# poyy.github.io
-# poyoo.github.io
-# poyyo.github.io
+
+Instalacion del blog para leer offline:
+
+  1. Descargar codigo fuente
+  
+  ![]({{site.baseurl}}/images/descarga-blog.png)
