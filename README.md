@@ -1,9 +1,9 @@
 
-# WWW.POYONCIO.COM[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-# Poyoweb
+# Poyoweb[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Poyoweb es la página www.poyoncio.com lista para descargar y leer totalmente offline. 
+
 ### Requisitos 
 
 Para instalar poyoweb con exito es necesario tener las siguientes dependecias:
@@ -22,7 +22,7 @@ Para instalar poyoweb con exito es necesario tener las siguientes dependecias:
       $gem install jekyll 
   ```
   
-  3. Descarga poyoweb 
+  3. Descarga poyoweb:
   ![](images/descarga-blog.png)
   
   4. Entra en la carpeta "poyoweb" y instala las gemas necesarias:
