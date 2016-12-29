@@ -12,5 +12,5 @@ Primero de todo, decir que en este curso veremos lo básico, no entraremos en la
 
 Pues bien, espero que les guste y en el próximo tutorial comenzaremos con teoría básica sobre arquitectura de computadoras.
 
- <center>![](images/cuanto-cabron-chiste-programa.jpg)</center>
+![](images/cuanto-cabron-chiste-programa.jpg)
  
