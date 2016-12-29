@@ -1,1 +1,5 @@
-
+ 	capas-arquitectura-computadoras.png 	
+	captura-local.png 	
+	cuanto-cabron-chiste-programa.jpg 	
+	descarga-blog.png 
+	favicon.ico
