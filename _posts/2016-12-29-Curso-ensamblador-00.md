@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso ensamblador 00 - Introduccón   
+title: Curso ensamblador 00: Introduccón   
 date: 2016-12-29
 ---
 --------------------
