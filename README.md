@@ -6,8 +6,8 @@ Poyoweb es la página www.poyoncio.com lista para descargar y leer totalmente of
 
 
 
-### Requisitos 
-
+## Requisitos 
+--------------------------
 Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
     
 -> Ruby 2.2.3 o superiores
