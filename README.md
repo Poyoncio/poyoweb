@@ -7,7 +7,8 @@ Poyoweb es la página www.poyoncio.com lista para descargar y leer totalmente of
 
 
 ## Requisitos 
---------------------------
+
+
 Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
     
 -> Ruby 2.2.3 o superiores
@@ -20,7 +21,7 @@ Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
 
 
 ## Instalación
-------------------------
+
 
   **1.** [Instala ruby](https://www.ruby-lang.org/es/documentation/installation/)  
   
@@ -63,7 +64,7 @@ Y listo, ya lo tendrás instalado:
 
 
 ## Especiales gracias a [Alex Sun](https://github.com/syaning):
-------------------------
+
 
 Muchas gracias por su gran trabajo con la [plantilla](https://github.com/syaning/vida).
 
@@ -72,7 +73,7 @@ Muchas gracias por su gran trabajo con la [plantilla](https://github.com/syaning
 
 
 ## Licencia
--------------------------
+
 
 Este proyecto esta bajo la licencia MIT - puedes vera en [LICENSE](LICENSE) para los detalles.
 
