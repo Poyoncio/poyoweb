@@ -8,7 +8,7 @@ Seguramente muchas veces hayan oído que ensamblador es de los lenguajes que má
 
 No es lo mismo programar en python que en ensamblador está claro, ensamblador es un lenguaje más abstracto. Pero con este curso trataremos de solucionar esas dudas y crear una firme base para más tarde entrar de lleno en reversing, así que comencemos. 
 
-Primero de todo, decir que en este curso veremos lo básico, no entraremos en la creación de grandes programas. Trataremos con los registros, los flags, el funcionamiento de la memoria y las llamadas al sistema. Es muy normal que usted se pierda en algún tutorial, no pasa nada, como supongo que bien saben, pueden contactar me para solucionar cualquier duda! 
+Primero de todo, decir que en este curso veremos lo básico, no entraremos en la creación de grandes programas. Trataremos con los **registros**, los **flags**, el **funcionamiento de la memória** y las **llamadas al sistema**. Es muy normal que usted se pierda en algún tutorial, no pasa nada, como supongo que bien saben, pueden contactar me para solucionar cualquier duda! 
 
 Pues bien, espero que les guste y en el próximo tutorial comenzaremos con teoría básica sobre arquitectura de computadoras. Todas las parted de este curso se iran incluyendo en el apartado /categorías. 
 
