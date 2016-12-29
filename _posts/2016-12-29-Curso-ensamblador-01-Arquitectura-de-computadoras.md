@@ -5,4 +5,7 @@ date: 2016-12-29
 ---
 --------------------
 La [arquitectua de computadoras](https://es.wikipedia.org/wiki/Arquitectura_de_computadoras) es el diseño que tienen los ordenadores, suelen estar formadas por "capas"
-->![](/images/capas-arquitectura-computadoras.png)<-
+
+<p align="center">
+  <img src="/images/capas-arquitectura-computadoras.png"/>
+</p>
