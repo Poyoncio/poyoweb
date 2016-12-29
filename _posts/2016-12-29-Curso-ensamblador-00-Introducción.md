@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso ensamblador 00. Introducción   
+title: Curso ensamblador 00: Introducción   
 date: 2016-12-29
 ---
 --------------------
