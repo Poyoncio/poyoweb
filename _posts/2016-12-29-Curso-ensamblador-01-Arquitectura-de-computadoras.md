@@ -27,4 +27,4 @@ Lo que me interesa que a usted le quede claro de este capítulo, es que existen 
 
 <br>
 
-NOTA: Se adjuntan links, como información extra por si alguien no sabe que es, no hace falta que se lean ni mucho menos se aprendan. Añado que si algún experto lee esto que no se asuste, son solo explicaciones un poco más abstractas para que se comprendan mejor. 
+**NOTA**: Se adjuntan links, como información extra por si alguien no sabe que es, no hace falta que se lean ni mucho menos se aprendan. Añado que si algún experto lee esto que no se asuste, son solo explicaciones un poco más abstractas para que se comprendan mejor. 
