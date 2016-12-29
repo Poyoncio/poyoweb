@@ -13,4 +13,4 @@ Primero de todo, decir que en este curso veremos lo básico, no entraremos en la
 Pues bien, espero que les guste y en el próximo tutorial comenzaremos con teoría básica sobre arquitectura de computadoras. Todas las parted de este curso se iran incluyendo en el apartado /categorías. 
 
 
- <div style="text-align:center"><img src ="/images/cuanto-cabron-chiste-progama.jpg" /></div>
+ <div text-align="center"><img src ="/images/cuanto-cabron-chiste-progama.jpg" /></div>
