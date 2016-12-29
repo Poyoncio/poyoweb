@@ -10,4 +10,4 @@ La [arquitectua de computadoras](https://es.wikipedia.org/wiki/Arquitectura_de_c
   <img src="/images/capas-arquitectura-computadoras.png"/>
 </p>
 
-Como podemos observar 
+El hardware son los componentes físicos del sistema, como puede ser la RAM o el procesador. El firmware es el encargado de controlar los circuitos (hardware) y transmitir la información que estos envian al sistema. Mas adelante tendriamos el lenguaje ensamblador, que se encarga de "traducir/interpretar" el [código binario](https://es.wikipedia.org/wiki/C%C3%B3digo_binario) 
