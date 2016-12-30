@@ -36,7 +36,7 @@ Cuando un dato es eliminado, lo único que hace es marcar ese espacio como vací
 <br>
 
 ### La unidad lógica
-La unidad lógica o unidad aritmética lógica (ALU) es el encargado de calcular las operaciones aritméticas (suma, resta, multiplicación...), muchos circuitos requieren de esta parte, el más básico que usted puede ver en su pantalla seria el reloj, que se mantiene sumando 1 al tiempo actual. 
+La unidad lógica o unidad aritmética lógica (ALU) es el encargado de calcular las operaciones aritméticas (suma, resta, multiplicación... mediante puertas lógicas), muchos circuitos requieren de esta parte, el más básico que usted puede ver en su pantalla seria el reloj, que se mantiene sumando 1 al tiempo actual. 
 
 <img src="/images/unidad-aritmetica-logica.png"/>
 
