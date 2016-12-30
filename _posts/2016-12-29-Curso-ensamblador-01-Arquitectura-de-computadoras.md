@@ -18,12 +18,68 @@ Lo que nos interesa a nosotros y con lo que nos tenemos que quedar es con la rel
 
 <br>
 
-Para no confundirnos, nos referiremos a procesadores como [CPU](https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento) (Unidad Central de Procesamiento), las tres parted de la CPU que nos interesa son: la **pila**, el **acumulador** y los **registros**, se diferencian por la forma de almacenaje, que será lo que veremos en próximos capítulos del curso. 
+Para no confundirnos, nos referiremos a procesadores como [CPU](https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento) (Unidad Central de Procesamiento), se acostumbra a decir que la CPU también esta formada por la **memoria principal**, la **unidad lógica** y la **unidad de  control**.
 
 <br>
 
-Lo que me interesa que a usted le quede claro de este capítulo, es que existen unas capas definidas y que tienen como parte más importante el CPU. Hay que resaltar que los primeros capítulos serán teóricos, pero **enseguida que se pueda se comenzara con la práctica :)** El próximo capítulo ya comenzaremos a tratar con ensamblador. 
+### La memoria principal
+Es la encargada de almacenar los datos, los datos se alamacenan junto con una dirección para ser accedidas más tarde. Hay varios tipos de memoria, pero las veremos más adelante para no saturarnos, solo añadir que existen dos categorías de memoria: solo lectura (ROM) y escritura/lectura (RWM).
+
+<img src="/images/funcionamiento-memoria.png"/>
+
+En la anterior imagen se puede observar el funcionamiento de la memoria, entra un dato, en este caso 2A y se almacena en la dirección 0, entra 45 y se almacena en la dirección 1. Cuando un programa requiere de esta información almacenada, solo tiene que situarse en la memoria asignada anteriormente. 
 
 <br>
 
-**NOTA**: Se adjuntan links, como información extra por si alguien no sabe que es, no hace falta que se lean ni mucho menos se aprendan. Añado que si algún experto lee esto que no se asuste, son solo explicaciones un poco más abstractas para que se comprendan mejor. 
+Cuando un dato es eliminado, lo único que hace es marcar ese espacio como vacío, y solo sera "reemplazado" cuando se requiera de esa celda de almacenaje. Por eso cuando eliminas un fichero lo puedes recuperar con herramientas forenses, porque ese dato no es borrado hasta que otro programa lo necesita. Más adelante entraremos más a fondo.  
+
+<br>
+
+### La unidad lógica
+La unidad lógica o unidad aritmética lógica (ALU) es el encargado de calcular las operaciones aritméticas (suma, resta, multiplicación...), muchos circuitos requieren de esta parte, el más básico que usted puede ver en su pantalla seria el reloj, que se mantiene sumando 1 al tiempo actual. 
+
+<img src="/images/unidad-aritmetica-logica.png"/>
+
+Este es el símbolo con el que se representa en los esquemas, no es un componente que necesitemos estudiar, por lo tanto, con saber que existe es más que suficiente. 
+
+<br>
+
+### La unidad de control
+La unidad de control (UC) es la encargada de buscar los datos en la memoria principal para interpretarlos y que sean ejecutadas por otra unidad que veremos más adelante, con el concepto con el que nos tenemos que quedar, es con que la unidad de control, busca en la memoria principal para que sean usados los datos en un programa.
+
+<br>
+<br>
+
+Por tanto podemos esquematizar toda la teoria mencionada anteriormente con la siguiente imagen: 
+
+<img src="/images/organizacion-cpu.png"/>
+
+Y aqui un breve resumen de lo mas importante y de lo que se tienen que acordar:
+
+<table>
+	<thead>
+		<tr>
+			<th>Componente</th>
+			<th>Función</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Memoria principal</td>
+			<td>Encargada de almacenar los datos junto a una dirección para ser accesibles </td>
+		</tr>
+    <tr>
+      <td>Unidad lógica (ALU)</td>
+      <td>Encargada de llevar a cabo las operaciones aritméticas</td>
+     </tr>
+     <tr>
+      <td>Unidad de control (UC)</td>
+      <td>Buscar en memoria los datos mediante su dirección</td>
+      </tbody>
+ </table>
+
+<br>
+
+Si has conseguido llegar hasta aquí comprendiendo lo básico, te felicito, este es de los tutoriales con más teoría del curso, así que ahora todo sera cuesta bajo. Es recomendable que [descarguen la tabla y el esquema](
+https://mega.nz/#!K4pCyZZC!v8pghftCc7gy4pAr4E4Lj3b-EQl0PD827G-uA5qcApc
+) para así acordarse de lo más necesario cuando se necesite. También hay que comentar, que existen otros componentes importantes que se trataran **más adelante** (tranquilos que aun queda) como el bus o la unidad de proceso.  
