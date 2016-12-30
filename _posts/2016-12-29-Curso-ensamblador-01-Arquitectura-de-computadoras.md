@@ -18,7 +18,7 @@ Lo que nos interesa a nosotros y con lo que nos tenemos que quedar es con la rel
 
 <br>
 
-Para no confundirnos, nos referiremos a procesadores como [CPU](https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento) (Unidad Central de Procesamiento), la CPU esta formada por: la **memoria principal**,  **unidad lógica** y la **unidad de control**, que será lo que veremos en próximos capítulos del curso. 
+Para no confundirnos, nos referiremos a procesadores como [CPU](https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento) (Unidad Central de Procesamiento), las tres parted de la CPU que nos interesa son: la **pila**, el **acumulador** y los **registros** que será lo que veremos en próximos capítulos del curso. 
 
 <br>
 
