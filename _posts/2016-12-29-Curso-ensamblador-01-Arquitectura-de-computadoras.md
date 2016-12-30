@@ -22,7 +22,7 @@ Para no confundirnos, nos referiremos a procesadores como [CPU](https://es.wikip
 
 <br>
 
-### La memoria principal
+### **La memoria principal**
 Es la encargada de almacenar los datos, los datos se alamacenan junto con una dirección para ser accedidas más tarde. Hay varios tipos de memoria, pero las veremos más adelante para no saturarnos, solo añadir que existen dos categorías de memoria: solo lectura (ROM) y escritura/lectura (RWM).
 
 <img src="/images/funcionamiento-memoria.png"/>
@@ -35,7 +35,7 @@ Cuando un dato es eliminado, lo único que hace es marcar ese espacio como vací
 
 <br>
 
-### La unidad lógica
+### **La unidad lógica**
 La unidad lógica o unidad aritmética lógica (ALU) es el encargado de calcular las operaciones aritméticas (suma, resta, multiplicación... mediante puertas lógicas), muchos circuitos requieren de esta parte, el más básico que usted puede ver en su pantalla seria el reloj, que se mantiene sumando 1 al tiempo actual. 
 
 <img src="/images/unidad-aritmetica-logica.png"/>
@@ -44,7 +44,7 @@ Este es el símbolo con el que se representa en los esquemas, no es un component
 
 <br>
 
-### La unidad de control
+### **La unidad de control**
 La unidad de control (UC) es la encargada de buscar los datos en la memoria principal para interpretarlos y que sean ejecutadas por otra unidad que veremos más adelante, con el concepto con el que nos tenemos que quedar, es con que la unidad de control, busca en la memoria principal para que sean usados los datos en un programa.
 
 <br>
