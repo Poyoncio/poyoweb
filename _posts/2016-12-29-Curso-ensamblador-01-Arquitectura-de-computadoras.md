@@ -68,17 +68,16 @@ Y aqui un breve resumen de lo mas importante y de lo que se tienen que acordar:
 			<td>Memoria principal</td>
 			<td>Encargada de almacenar los datos junto a una dirección para ser accesibles </td>
 		</tr>
-    <tr>
-      <td>Unidad lógica (ALU)</td>
-      <td>Encargada de llevar a cabo las operaciones aritméticas</td>
-     </tr>
-     <tr>
-      <td>Unidad de control (UC)</td>
-      <td>Buscar en memoria los datos mediante su dirección</td>
-      </tbody>
- </table>
+    		<tr>
+     			 <td>Unidad lógica (ALU)</td>
+     			 <td>Encargada de llevar a cabo las operaciones aritméticas</td>
+     		</tr>
+     		<tr>
+      			 <td>Unidad de control (UC)</td>
+      			 <td>Buscar en memoria los datos mediante su dirección</td>
+       </tbody>
+</table>
 
 <br>
 
-Si has conseguido llegar hasta aquí comprendiendo lo básico, te felicito, este es de los tutoriales con más teoría del curso, así que ahora todo sera cuesta bajo. Es recomendable que [descarguen la tabla y el esquema](
-https://mega.nz/#!K4pCyZZC!v8pghftCc7gy4pAr4E4Lj3b-EQl0PD827G-uA5qcApc) para así acordarse de lo más necesario cuando se necesite. También hay que comentar, que existen otros componentes importantes que se trataran **más adelante** (tranquilos que aun queda) como el bus o la unidad de proceso.  
+Si has conseguido llegar hasta aquí comprendiendo lo básico, te felicito, este es de los tutoriales con más teoría del curso, así que ahora todo sera cuesta bajo. Es recomendable que [descarguen la tabla y el esquema](https://mega.nz/#!K4pCyZZC!v8pghftCc7gy4pAr4E4Lj3b-EQl0PD827G-uA5qcApc) para así acordarse de lo más necesario cuando se necesite. También hay que comentar, que existen otros componentes importantes que se trataran **más adelante** (tranquilos que aun queda) como el bus o la unidad de proceso.  
