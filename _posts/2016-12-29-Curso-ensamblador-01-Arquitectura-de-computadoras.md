@@ -56,27 +56,9 @@ Por tanto podemos esquematizar toda la teoria mencionada anteriormente con la si
 
 Y aqui un breve resumen de lo mas importante y de lo que se tienen que acordar:
 
-<table>
-	<thead>
-		<tr>
-			<th>Componente</th>
-			<th>Función</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Memoria principal</td>
-			<td>Encargada de almacenar los datos junto a una dirección para ser accesibles </td>
-		</tr>
-    		<tr>
-     			 <td>Unidad lógica (ALU)</td>
-     			 <td>Encargada de llevar a cabo las operaciones aritméticas</td>
-     		</tr>
-     		<tr>
-      			 <td>Unidad de control (UC)</td>
-      			 <td>Buscar en memoria los datos mediante su dirección</td>
-       </tbody>
-</table>
+<br>
+
+<img src="/images/tabla-principales-partes-cpu.png"/>
 
 <br>
 
