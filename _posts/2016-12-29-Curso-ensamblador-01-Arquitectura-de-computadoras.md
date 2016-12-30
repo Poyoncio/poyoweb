@@ -81,5 +81,4 @@ Y aqui un breve resumen de lo mas importante y de lo que se tienen que acordar:
 <br>
 
 Si has conseguido llegar hasta aquí comprendiendo lo básico, te felicito, este es de los tutoriales con más teoría del curso, así que ahora todo sera cuesta bajo. Es recomendable que [descarguen la tabla y el esquema](
-https://mega.nz/#!K4pCyZZC!v8pghftCc7gy4pAr4E4Lj3b-EQl0PD827G-uA5qcApc
-) para así acordarse de lo más necesario cuando se necesite. También hay que comentar, que existen otros componentes importantes que se trataran **más adelante** (tranquilos que aun queda) como el bus o la unidad de proceso.  
+https://mega.nz/#!K4pCyZZC!v8pghftCc7gy4pAr4E4Lj3b-EQl0PD827G-uA5qcApc) para así acordarse de lo más necesario cuando se necesite. También hay que comentar, que existen otros componentes importantes que se trataran **más adelante** (tranquilos que aun queda) como el bus o la unidad de proceso.  
