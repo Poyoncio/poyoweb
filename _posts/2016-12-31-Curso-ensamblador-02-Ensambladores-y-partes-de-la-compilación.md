@@ -15,10 +15,12 @@ En el ultimo post vimos el aburrido funcionamiento general de la CPU, en el cap�
 Como podemos observar tenemos diferentes ensambladores, [NASM](www.nasm.us) y [FASM](https://flatassembler.net/) son casi lo mismo, tienen soporte para todas las plataformas, en canvio [MASM](http://www.masm32.com/) que es el ensamblador desarrollado por Microsoft, solo tiene para su plataforma. En este curso usaremos **NASM**, si usted esta buscando tutoriales de FASM, MASM o derivados este curso también sirve, la única diferencia entre ellos es una leve cambio de syntaxis. Para obtener el compilador de NASM solo tenemos que ir a su [página](www.nasm.eu) y descargarlo:
 
 **NOTA**: Este curso sera orientado a linux, es conveniente que usted instale linux o tenga una VM, pues hay pequeños detalles que en windows cambian. Para linux, es sencilla la instalación, basta con poner en la terminal:
+
 #### Debian/Ubuntu
 ```
 $ sudo apt-get install nasm 
 ```
+
 #### CentOS y derivados
 ```
 $ sudo yum install nasm
