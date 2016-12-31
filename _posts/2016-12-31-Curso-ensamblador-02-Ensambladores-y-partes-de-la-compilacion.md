@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Curso ensamblador 02. Registros de uso general     
+title: Curso ensamblador 02. Ensambladores y partes de la compilacion
 date: 2016-12-31
 ---
 --------------------
-En el ultimo post vimos el aburrido funcionamiento general de la CPU, en el capítulo de hoy, toca algo mucho menos aburrido vamos a tratar con los tipos de ensamblador y las fases que tiene un programa antes de ser compilado. Igual que con los lenguajes de más alto nivel, en ensamblador existen diferentes "variantes/lenguajes" cada uno con una syntaxis propia y con unas dependencias que se tienen que cumplir:
+En el ultimo post vimos el aburrido funcionamiento general de la CPU, en el capítulo de hoy, toca algo mucho menos aburrido, vamos a tratar con los tipos de ensamblador y las fases que tiene un programa antes de ser compilado. Igual que con los lenguajes de más alto nivel, en ensamblador existen diferentes "variantes/lenguajes" cada uno con una syntaxis propia y con unas dependencias que se tienen que cumplir:
 
 <br>
 
@@ -40,10 +40,12 @@ Por tanto, una vez tenemos instalado correctamente NASM vamos a proceder a compi
 
 ```ASM
 section .data 
+
 msg db "Hola mundo", 0xA, 0xD
 len equ $ - msg 
 
 section .code 
+
 global _start
   _start:
   
@@ -76,7 +78,7 @@ $ nasm -f elf /home/Poyoncio/Documentos/asm/Hola-mundo.asm
 
 <br>
 
-Como hemos podido observar el argumento -f indica el tipo de ejecutable que queremos crear, en este caso [elf](https://es.wikipedia.org/wiki/Executable_and_Linkable_Format) que es el ejecutable de linux. Si hemos hecho bien este proceso, nos aparecera un nuevo archivo, llamado **Hola-mundo.o**, es un archivo de tipo objeto:
+Como hemos podido observar el argumento -f indica el tipo de ejecutable que queremos crear, en este caso [elf](https://es.wikipedia.org/wiki/Executable_and_Linkable_Format) que es el ejecutable de linux. Si hemos hecho bien este proceso, nos aparecera un nuevo archivo, llamado **Hola-mundo.o**, es un **archivo de tipo objeto**:
 
 <img src="/images/fichero-hola-mundo-ensamblado.png" />
 
@@ -98,7 +100,7 @@ Si hemos hecho bien el proceso nos aparecera un nuevo fichero llamado **Hola-mun
 
 <br>
 
-Como se puede observar, ya no utilizamos "nasm" porque ya habiamos finalizado el ensamblaje cuando combertimos el codigo fuente a fichero objeto. Y para ejecutar el programa con un simple **./Hola-mundo** ya nos funcionara:
+Como se puede observar, ya no utilizamos "nasm" porque ya habíamos finalizado el ensamblaje cuando convertimos el código fuente a fichero objeto. Y para ejecutar el programa con un simple **./Hola-mundo** ya nos funcionara:
 
 <img src="/images/ejecutable-hola-mundo-ejecutado.png" />
 
@@ -112,11 +114,11 @@ Entonces, vamos a ver en una sola imagen como hemos pasado de tener un fichero d
 
 <br>
 
-Como podemos observar, el que esta descrito como "paso 2" en la imagen, es cuando hemos ensamblado el codigo en texto plano a fichero objeto, el paso 3 lo hemos hecho cuando hemos enlazado los recursos necesarios con el fichero objeto mediante el comando "ld" y finalmente el paso 4 es la ejecucion.
+Como podemos observar, el que esta descrito como "paso 2" en la imagen, es cuando hemos ensamblado el código en texto plano a fichero objeto, el paso 3 lo hemos hecho cuando hemos enlazado los recursos necesarios con el fichero objeto mediante el comando "ld" y finalmente el paso 4 es la ejecución.
 
 <br>
 
-Para no tener que ejecutar estos comandos cada vez que quieres compilar un programa, voy a dejar un codigo en python (v. 2.7) bastante "sucio" para ahorrarnos ese tiempo. Solo hay que poner el codigo con extension .py dentro de la carpeta y ejecutarlo con el fichero que queremos ejecutar sin extension:
+Para no tener que ejecutar estos comandos cada vez que quieres compilar un programa, voy a dejar un código en python (v. 2.7) bastante "sucio" para ahorrarnos ese tiempo. Solo hay que poner el código con extensión .py dentro de la carpeta y ejecutarlo con el fichero que queremos ejecutar sin extensión:
 
 
 ```python
@@ -133,6 +135,5 @@ os.system('./'+fichero)
 
 <br>
 
-En el próximo capítulo, comenzaremos con los registros de uso general para adentrarnos un poco más. 
-
+En el próximo capítulo, comenzaremos con los registros de uso general para adentrarnos un poco más. La idea de este post, es que hayáis entendido el proceso previo al ejecutable, dejo por [aqui](https://mega.nz/#!W5pghApL!dBj640Ew7oeLIX8CvtyIspfOZkDWntFkbPPYxOZOOD4) el link de descarga del esquema, para que juntéis la imagen con las del post anterior.
 
