@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Curso ensamblador 02. Registros de uso general     
-date: 2016-12-29
+date: 2016-12-31
 ---
 --------------------
 En el ultimo post vimos el aburrido funcionamiento general de la CPU, en el capítulo de hoy, toca algo mucho menos aburrido vamos a tratar con los tipos de ensamblador y las fases que tiene un programa antes de ser compilado. Igual que con los lenguajes de más alto nivel, en ensamblador existen diferentes "variantes/lenguajes" cada uno con una syntaxis propia y con unas dependencias que se tienen que cumplir:
@@ -38,7 +38,7 @@ Por tanto, una vez tenemos instalado correctamente NASM vamos a proceder a compi
 <br>
 **NOTA: No hace falta que comprendas este código, no te dejes engañar, no es complicado, simplemente aun no entiendes como funciona, cuando llegue el momento lo entenderás a la perfección.**
 
-```NASM
+```ASM
 section .data 
 msg db "Hola mundo", 0xA, 0xD
 len equ $ - msg 
@@ -77,6 +77,7 @@ $ nasm -f elf /home/Poyoncio/Documentos/asm/Hola-mundo.asm
 <br>
 
 Como hemos podido observar el argumento -f indica el tipo de ejecutable que queremos crear, en este caso [elf](https://es.wikipedia.org/wiki/Executable_and_Linkable_Format) que es el ejecutable de linux. Si hemos hecho bien este proceso, nos aparecera un nuevo archivo, llamado **Hola-mundo.o**, es un archivo de tipo objeto:
+
 <img src="/images/fichero-hola-mundo-ensamblado.png" />
 
 <br>
@@ -92,11 +93,13 @@ $ ld -m elf_i386 -s -o Hola-mundo Hola-mundo.o
 Seguramente os habréis dado cuenta de que en vez de poner elf, hemos puesto elf_i386, esto son simplemente temas de arquitectura, cuando veamos los registros, entraremos en detalle. 
 
 Si hemos hecho bien el proceso nos aparecera un nuevo fichero llamado **Hola-mundo**, este fichero ya seria el ejecutable:
+
 <img src="/images/ld-ejecutable-Hola-mundo.png" />
 
 <br>
 
 Como se puede observar, ya no utilizamos "nasm" porque ya habiamos finalizado el ensamblaje cuando combertimos el codigo fuente a fichero objeto. Y para ejecutar el programa con un simple **./Hola-mundo** ya nos funcionara:
+
 <img src="/images/ejecutable-hola-mundo-ejecutado.png" />
 
 <br>
