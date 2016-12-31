@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso ensamblador 02. Ensambladores y partes de la compilacion
+title: Curso ensamblador 02. Ensambladores y partes de la compilación
 date: 2016-12-31
 ---
 --------------------
@@ -38,7 +38,7 @@ Por tanto, una vez tenemos instalado correctamente NASM vamos a proceder a compi
 <br>
 **NOTA: No hace falta que comprendas este código, no te dejes engañar, no es complicado, simplemente aun no entiendes como funciona, cuando llegue el momento lo entenderás a la perfección.**
 
-```NASM
+```
 section .data 
 
 msg db "Hola mundo", 0xA, 0xD
