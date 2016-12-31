@@ -16,12 +16,12 @@ Como podemos observar tenemos diferentes ensambladores, [NASM](www.nasm.us) y [F
 
 **NOTA**: Este curso sera orientado a linux, es conveniente que usted instale linux o tenga una VM, pues hay pequeños detalles que en windows cambian. Para linux, es sencilla la instalación, basta con poner en la terminal:
 
-#### Debian/Ubuntu
+### Debian/Ubuntu
 ```
 $ sudo apt-get install nasm 
 ```
 
-#### CentOS y derivados
+### CentOS y derivados
 ```
 $ sudo yum install nasm
 ```
