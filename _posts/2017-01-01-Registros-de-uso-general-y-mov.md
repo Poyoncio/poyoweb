@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Curso ensamblador 03. Registros de uso general y la instruccion mov    
-date: 2016-12-29
+date: 2017-01-01
 ---
 --------------------
 Ahora que ya sabemos compilar programas, comenzaremos a comprender la lógica de ensamblador. En el día de hoy, toca hablar de **los registros de uso general**, por tanto, ¿Qué son los registros? Los registros son un tipo de memoria que viene integrada en el procesador. Son característicos porque son un tipo de memoria rápida y tienen poca capacidad. Los registros son bastante usados en ensamblador por ejemplo para llevar a cabo operaciones aritméticas. Existen diferentes registros, tales como los registros de datos, de memoria, de propósito específico... Pero los que nos interesa en este capítulo son los de uso general o propósito general, existen diferentes registros de uso general que se clasifican en función de su capacidad:
@@ -12,11 +12,9 @@ Ahora que ya sabemos compilar programas, comenzaremos a comprender la lógica de
 
 <br>
 
-Seguramente con este gráfico aun no han entendido  nada, así que vamos a explicarlo paso a paso. Los registros que tenemos se clasifican en función de la capacidad que soportan, hay de 64, 32, 16 y de 8 bits. Bien, si nos fijamos en la primera palabra de cada fila podemos ver que esta formada por "AX" mas un prefijo que va variando en función de su capacidad. En los registros de 64 bits seria "**R**"+"AX", en el de 32 es "**E**"+"AX" y en el de 16 directamente **no hay prefijo**, solo es "AX", por el momento no se fijen en la ultima fila de debajo del todo porque es un caso especial. Como podemos observar no solo AX se repite, sino que además también se repite con "BX", "CX" y "DX".
+Seguramente con este gráfico aun no han entendido  nada, así que vamos a explicarlo paso a paso. Los registros que tenemos se clasifican en función de la capacidad que soportan, hay de 64, 32, 16 y de 8 bits. Bien, si nos fijamos en la primera palabra de cada fila podemos ver que esta formada por "AX" mas un prefijo que va variando en función de su capacidad. En los registros de 64 bits seria "**R**"+"AX", en el de 32 es "**E**"+"AX" y en el de 16 directamente **no hay prefijo**, solo es "AX", por el momento no se fijen en la ultima fila de debajo del todo porque es un caso especial. Como podemos observar no solo AX se repite, sino que además también se repite con "BX", "CX" y "DX". Por tanto tenemos:
 
 <br>
-
-Por tanto tenemos:
 
 <img src="/images/registros-capacidad-64-32-16.png" />
 
@@ -28,7 +26,7 @@ Los registros que a nosotros nos interesa durante este curso es el de 32 bits, e
 
 Seguramente ya hayan entendido como se clasifican estos registros, entre RAX y EAX, la única diferencia que hay, es la capacidad, tanto RAX como EAX como AX tienen la misma función dentro del código. Hay que comentar que en determinados casos como la división o los loops hay datos que se almacenan por defecto en EAX, EBX, ECX o EDX, pero esto ya lo veremos muchísimo más adelante, el concepto que me interesa que se entienda, es que estos registros son como si fueran variables de un lenguaje de más bajo nivel, es decir que puedes asignarles el valor que quieras, pero que no hace falta inicializarlas, es decir por ejemplo en C++ se hace:
 
-```C++
+```C
 int numero; //Aqui se inicializa
 numero = 1;
 ```
@@ -69,7 +67,7 @@ Por tanto la instrucción "mov" podemos decir que es equivalente a " = ". En mov
 
 Pero claro, no se puede usar una variable cualquiera, es decir, las variables se tienen que inicializar antes como es el caso de C++:
 
-```C++
+```C
   int numero;    //Declaramos el tipo de dato
   numero = 1;    //mov numero, 1
 ```
