@@ -5,4 +5,4 @@ permalink: /categorias/
 ---
 
 ----------------
-  - [Ensamblador desde cero](http://127.0.0.1:4000/2015/05/03/styles-for-vida/)
+  - [Ensamblador desde cero](http://poyoncio.com/2016/12/28/Indice-curso-ensamblador-desde-cero/)
