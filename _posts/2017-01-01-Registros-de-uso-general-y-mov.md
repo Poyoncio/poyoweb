@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso ensamblador 03. Registros de uso general y la instruccion mov    
+title: Curso ensamblador 03. Registros de uso general y la instrucción mov    
 date: 2017-01-01
 ---
 --------------------
