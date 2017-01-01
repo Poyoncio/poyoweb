@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Presentación del blog
-date: 2016-12-28
+date: 2016-12-27
 ---
 --------------------
 
