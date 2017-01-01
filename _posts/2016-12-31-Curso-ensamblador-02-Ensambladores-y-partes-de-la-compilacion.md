@@ -46,7 +46,7 @@ section .data
 msg db "Hola mundo", 0xA, 0xD
 len equ $ - msg 
 
-section .code 
+section .text
 
 global _start
   _start:
