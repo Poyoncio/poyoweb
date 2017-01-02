@@ -151,7 +151,7 @@ Bien, vamos a hacer un breve repaso. Lo que hemos hecho en la sección .data pri
 
 <br>
 
-Bien, ahora vamos a atacar la sección .text, lo primero que podemos ver, es lo que parece la declaración de una etiqueta global y su posterior comienzo:
+Ahora vamos a atacar la sección .text, lo primero que podemos ver, es lo que parece la declaración de una etiqueta global y su posterior comienzo:
 
 ```nasm
 global _start
