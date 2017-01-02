@@ -56,6 +56,7 @@ msg db "Hola Mundo", 0xA, 0xD
 
 
 Bien, lo que hace este código básicamente es asignar a "msg" la frase "Hola mundo", es decir:
+
 ```python
 msg = "Hola Mundo"
 ```
