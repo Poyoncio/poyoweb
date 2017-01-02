@@ -67,6 +67,7 @@ Lo que hace "db" es algo parecido a "mov", realmente "db" es el encargado de dec
 ```nasm
 msg db "Hola Mundo"
 ```
+
 #### Código en python:
 
 ```python
