@@ -159,6 +159,7 @@ global _start
 ```
 
 Este tipo de instrucción se pone para indicar el comienzo del código. Algo así como el main en C++:
+
 #### Código en C++:
 ```c
 int main()
