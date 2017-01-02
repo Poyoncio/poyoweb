@@ -16,7 +16,7 @@ Primero de todo, decir que en este curso veremos lo básico, no entraremos en la
 
 <br>
 
-Pues bien, espero que les guste y en el próximo tutorial comenzaremos con teoría básica sobre arquitectura de computadoras. Todas las parted de este curso se iran incluyendo en el apartado /categorías. 
+Pues bien, espero que les guste y en el próximo tutorial comenzaremos con teoría básica sobre arquitectura de computadoras. Todas las partes de este curso se iran incluyendo en el apartado /categorías. 
 
 
 
