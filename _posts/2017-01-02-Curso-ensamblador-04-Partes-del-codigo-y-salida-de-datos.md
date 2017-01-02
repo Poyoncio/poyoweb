@@ -84,6 +84,7 @@ Seguramente se sigan preguntando, y los caracteres 0xA y 0xD, ¿Para que sirven?
 ```nasm
 msg db "Hola mundo", 0xA, 0xD
 ```
+
 #### Código en python:
 
 ```python
