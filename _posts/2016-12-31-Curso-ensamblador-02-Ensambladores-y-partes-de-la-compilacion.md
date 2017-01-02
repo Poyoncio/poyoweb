@@ -31,7 +31,7 @@ También se puede compilar el [código fuente](https://github.com/letolabs/nasm)
 <br>
 
 Una vez instalado si teclean en la terminal "nasm" obtendrán algo así:
-<img src="/images/primer-comando-nasm.png"/>
+<img src="/images/nasm-primer-comando.png"/>
 
 <br>
 
