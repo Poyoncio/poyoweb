@@ -163,7 +163,7 @@ Fijaros bien en el resultado, no, no es que haya dado un enter despues de haber 
 
 <img src="/images/sys-read-noob-5.png" />
 
-Se puede ver que en ECX lo que devuelve es un dato de tipo char*, por tanto lo que realmente tenemos es 4 bytes de espacio, porque el último carácter tiene que ser "0", que es el que marca el final de la cadena y de linea por defecto, por eso nos aparecen los números seguidos del prompt:
+Se puede ver que en EDX se tiene que poner el tamaño de caracteres ingresados, por tanto lo que realmente tenemos es 4 bytes de espacio, porque el último carácter tiene que ser "0", que es el que marca el final de la cadena y de linea por defecto, por eso nos aparecen los números seguidos del prompt:
 
 <img src="/images/seguido-prompt-reserva.png" />
 
