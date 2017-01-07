@@ -34,6 +34,8 @@ reserva resb 5
 
 **NOTA**: Malloc reserva espacio de forma dinámica, es decir, puede ser liberada con el operador free, mientras que "resb" no se puede liberar memoria reservada. 
 
+<br>
+
 Lo que hemos hecho aquí, ha sido declarar la sección y reservar 5 bytes, es decir lo que equivale a 5 caracteres. Por defecto cuando ingresemos los datos serán de tipos char*, es decir, si ingresamos números, no se podrá operar con ellos tal cual. Espero que se haya entendido, así que vamos a comenzar a programar la entrada de datos por partes, lo que vamos a pedir va a ser que ingrese varios números y los imprima por pantalla, primero el código de la sección data:
 
 ```nasm
