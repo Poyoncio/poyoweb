@@ -15,3 +15,5 @@ Aquí se irán poniendo todos los capítulos de el curso de ensamblador desde ce
    · [03 - Registros de uso general y la instrucción mov](http://poyoncio.com/2017/01/01/Curso-ensamblador-03-Registros-de-uso-general-y-mov/)
 
    · [04 - Partes del código y salida de datos](http://poyoncio.com/2017/01/02/Curso-ensamblador-04-Partes-del-codigo-y-salida-de-datos/)
+   
+   ·[05 - Reserva y entrada de datos](http://poyoncio.com/2017/01/04/Curso-ensamblador-05-Reserva-y-entrada-de-datos/)
