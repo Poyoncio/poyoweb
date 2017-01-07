@@ -4,64 +4,13 @@
 
 Poyoweb es la página www.poyoncio.com lista para descargar y leer totalmente offline. 
 
+## Instalacion 
+1. 
+```
+$ wget -k -r poyoncio.com
+```
 
-
-## Requisitos 
-
-
-Para instalar poyoweb con éxito es necesario tener las siguientes dependecias:
-    
--> Ruby 2.2.3 o superiores
-    
--> Ruby on rails 
-    
--> Jekyll gem 
-
-
-
-
-## Instalación
-
-
-  **1.** [Instala ruby](https://www.ruby-lang.org/es/documentation/installation/)  
-  
-  
-  **2.** [Instala ruby on rails](http://www.rubyonrails.org.es/instala.html)
-  
-  
-  **3.** Instala la gema jekyll mediante la terminal:
-      
-      
-      $gem install jekyll
-      
-  
-  
-  **4.** Descarga poyoweb:
-       
-![](images/descarga-blog.png)
-  
-  
-  
-  **5.** Entra en la carpeta "poyoweb" y instala las gemas necesarias:      
-     
-     
-      $bundle install
-     
-  
-  
-  
-  **6.** Ejecuta el servidor de jekyll y accede a  http://127.0.0.1:4000/: 
-     
-     
-      $jekyll server
-      
-      
-      
-Y listo, ya lo tendrás instalado:
-![](images/captura-local.png)
-
-
-
+2. CLick index.html
 
 ## Especiales gracias a [Alex Sun](https://github.com/syaning):
 
