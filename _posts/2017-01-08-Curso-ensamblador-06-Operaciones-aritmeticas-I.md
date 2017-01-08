@@ -194,7 +194,7 @@ Aquí se imprime la frase "La suma de 7 y 2 es:"
     int 0x80
 ```
 
-Lo que tenemos en este pedazo es lo que viene siendo la suma y la impresión del resultado. Primeramente pasamos a WAX 7 y a EBX 2, lo sumamos y en el registro EAX se queda asignado el valor 9. En la instrucción "add eax, '0'" lo que hacemos es sumar el carácter '0' a 9, y lo que quedara será 9'0', es decir, lo convertirá a cadena, porque si recordamos lo que se le tenia que pasar a sys.write:
+Lo que tenemos en este pedazo es lo que viene siendo la suma y la impresión del resultado. Primeramente pasamos a EAX 7 y a EBX 2, lo sumamos y en el registro EAX se queda asignado el valor 9. En la instrucción "add eax, '0'" lo que hacemos es sumar el carácter '0' a 9, y lo que quedara será 9'0', es decir, lo convertirá a cadena, porque si recordamos lo que se le tenia que pasar a sys.write:
 
 <img src="/images/sys-write-sys-call-noob.png" />
 
