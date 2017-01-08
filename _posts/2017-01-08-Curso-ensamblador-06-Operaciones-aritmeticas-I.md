@@ -288,6 +288,7 @@ Por lo general los datos en la memoria se guardan en formato ASCII, es decir, se
 <img src="/images/tabla-ascii-simbolos-06.png" />
 
 **NOTA**: Si esta tabla no se ve, se puede usar cualquier otra que contenga números. 
+
 Como se puede observar, no existe -5 ni ningún valor más grande que 9, ya que con los números que tenemos en la fila 030 ya podemos crearlos todos. Bien, nuestro resultado era -5, así que vamos a ver a que equivaldría en la tabla:
 
 <img src="/images/captura-numeros-asccii.png" />
