@@ -281,5 +281,5 @@ Si ejecutamos una vez ya cambiado nos encontraremos con lo siguiente:
 
 <img src="/images/captura--7-2-rstapostiivo.png" />
 
-Como podemos ver, hay un error, este error sucede al usar signos, esto pasa tanto sumando como restando, esto se puede solucionar con flags, pero aun no hemos llegado, de todas formas, lo importante en este tutorial es comprender como funciona la suma/resta y como acceder a la memoria para modificar un valor.  
+Como podemos ver, hay un error, este error sucede al usar signos, esto pasa tanto sumando como restando, esto se puede solucionar con flags o con manipulacion de pantalla, pero aun no hemos llegado, de todas formas, lo importante en este tutorial es comprender como funciona la suma/resta y como acceder a la memoria para modificar un valor.  
   
