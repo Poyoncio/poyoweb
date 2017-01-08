@@ -6,7 +6,7 @@ date: 2017-01-08
 --------------------
 En el post de hoy veremos las operaciones aritméticas básicas, hoy haremos programas básicos donde unos números definidos en el programa se irán ejecutando, así que sin más preámbulos comencemos:
 
-### Suma
+## Suma:
 Empezamos con lo básico, la suma, se realiza con el operador "add". Para realizar una suma requerimos de al menos 1 operador de uso general para guardar el resultado, por ejemplo:
 
 ```nasm
@@ -31,7 +31,7 @@ Como podemos ver, no tendría demasiada lógica, lo único "nuevo" es que los re
 
 <br>
 
-### Resta
+## Resta:
 La resta es más de lo mismo, se restan los dos números y se almacenan en un registro, se usa el operador sub:
 
 ```nasm
