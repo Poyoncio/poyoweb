@@ -17,3 +17,5 @@ Aquí se irán poniendo todos los capítulos de el curso de ensamblador desde ce
    · [04 - Partes del código y salida de datos](http://poyoncio.com/2017/01/02/Curso-ensamblador-04-Partes-del-codigo-y-salida-de-datos/)
    
    ·[05 - Reserva y entrada de datos](http://poyoncio.com/2017/01/04/Curso-ensamblador-05-Reserva-y-entrada-de-datos/)
+
+   ·[06 - Operaciones aritméticas (I)](http://poyoncio.com/2017/01/08/Curso-ensamblador-06-Operaciones-aritmeticas-I/)
