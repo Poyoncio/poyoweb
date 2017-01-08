@@ -281,5 +281,24 @@ Si ejecutamos una vez ya cambiado nos encontraremos con lo siguiente:
 
 <img src="/images/captura--7-2-rstapostiivo.png" />
 
-Como podemos ver, hay un error, este error sucede al usar signos, esto pasa tanto sumando como restando, esto se puede solucionar con flags o con manipulacion de pantalla, pero aun no hemos llegado, de todas formas, lo importante en este tutorial es comprender como funciona la suma/resta y como acceder a la memoria para modificar un valor.  
-  
+Como podemos ver, hay un error, este error sucede al usar signos, esto pasa tanto sumando como restando, esto se puede solucionar con flags o con manipulación de pantalla, pero aun no hemos llegado, de todos modos, explicaremos a que se debe este error. 
+
+Por lo general los datos en la memoria se guardan en formato ASCII, es decir, se pasa a esa codificación y cuando se requiere de esa información se decodifica. Bien, si recordamos, lo que nos devolvía era el símbolo "+" de la operación -7 + 2, esto teóricamente nos debería de devolver -5, pero en canvio, no nos devuelve eso, así que miremos la tabla ascii:
+
+<img src="/images/tabla-ascii-simbolos-06.png" />
+
+**NOTA**: Si esta tabla no se ve, se puede usar cualquier otra que contenga números. 
+Como se puede observar, no existe -5 ni ningún valor más grande que 9, ya que con los números que tenemos en la fila 030 ya podemos crearlos todos. Bien, nuestro resultado era -5, así que vamos a ver a que equivaldría en la tabla:
+
+<img src="/images/captura-numeros-asccii.png" />
+
+Si contamos 5 hacia la izquierda partiendo de 0, podemos darnos cuenta que es el resultado que nos da, es decir "+", bien, ahora vamos a cambiar en la suma de nuestro programa, "mov eax, -7" y "mov ebx, 2" por "mov eax, 7" y "mov ebx, 8" y teóricamente nos dará el siguiente resultado:
+
+<img src="/images/nasm-ascii-8-7-06.png" />
+
+Bien, el resultado sería 15, pero nos devuelve "?", bien, pues vamos a volver a mirar la tabla:
+
+<img src="/images/captura-ascii-15-06-captura.png" />
+
+Si ahora contamos 6 caracteres partiendo de 9, nos podemos dar cuenta que casualmente nos da ese carácter. Resumiendo, si realizamos una operación inferior a 0 o superior a 9 no nos devolverá el resultado que "teóricamente" esperamos, por tanto para saber que carácter es el que tiene que devolver tenemos que contar a partir de 0, es decir, si nuestro resultado es -9, tendremos que contar 9 caracteres hacia la izquierda partiendo de 0, y si nuestro resultado es 25, tendremos que contar 25 caracteres partiendo de 0 hacia la derecha, esto no solo se cumple cuando se hacen sumas, también se cumple en restas, multiplicaciones, divisiones, incrementos... Más adelante, puede que tratemos de mejorar esto para que pueda devolvernos los números en condiciones, pero aun no tenemos los conocimientos necesarios, el objetivo de este post, es que hayan comprendido como se suma/resta, comprender como funciona la devolución de caracteres en función del signo y como se accede al contenido de una reserva, en el próximo post seguiremos con operaciones aritméticas..   
+
