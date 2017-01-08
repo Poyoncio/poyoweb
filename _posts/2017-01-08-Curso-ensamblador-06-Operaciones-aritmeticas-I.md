@@ -150,12 +150,11 @@ lenfinLinea equ $ - finLinea
 
 Aquí lo único que declaramos es un espacio, pero lo importante, es el salto de línea (0xA, 0xD) que declaramos antes, esto nos sirve para que el último resultado no nos salga pegado, en caso de no tener esta parte del código nos quedaría esto:
 
-<img src="/images/pegado-suma-resta-enter-1" />
+<img src="/images/pegado-suma-resta-enter-1.png" />
 
 <br>
 
 ```nasm
-section .bss
 section .bss
 
 ResSuma resb 1            
