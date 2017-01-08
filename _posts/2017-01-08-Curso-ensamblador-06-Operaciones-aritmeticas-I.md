@@ -6,8 +6,6 @@ date: 2017-01-08
 --------------------
 En el post de hoy veremos las operaciones aritméticas básicas, hoy haremos programas básicos donde unos números definidos en el programa se irán ejecutando, así que sin más preámbulos comencemos:
 
-<br>
-
 ### Suma
 Empezamos con lo básico, la suma, se realiza con el operador "add". Para realizar una suma requerimos de al menos 1 operador de uso general para guardar el resultado, por ejemplo:
 
@@ -156,7 +154,8 @@ Aquí lo único que declaramos es un espacio, pero lo importante, es el salto de
 
 <br>
 
-```section .bss
+```nasm
+section .bss
 section .bss
 
 ResSuma resb 1            
