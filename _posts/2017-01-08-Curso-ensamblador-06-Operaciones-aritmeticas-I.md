@@ -141,7 +141,6 @@ lenResta equ $ - msgResta
 
 Se puede observar que en msgResta, ponemos el salto de línea (0xA, 0xD) delante de la frase en vez de detrás, esto simplemente lo que hará, será meter un salto de línea justo antes de imprimir la frase.  
 
-<br>
 
 ```nasm
 finLinea db 0xA,0xD,""        
@@ -152,7 +151,6 @@ Aquí lo único que declaramos es un espacio, pero lo importante, es el salto de
 
 <img src="/images/pegado-suma-resta-enter-1.png" />
 
-<br>
 
 ```nasm
 section .bss
@@ -163,7 +161,6 @@ ResResta resb 1
 
 Aquí lo que se hace es declarar los espacios en memoria que necesitaremos, tanto para la suma como para la resta.
 
-<br>
 
 ```nasm
     mov eax, 4            ;Imprimimos frase suma     
@@ -176,7 +173,6 @@ Aquí lo que se hace es declarar los espacios en memoria que necesitaremos, tant
 
 Aquí se imprime la frase "La suma de 7 y 2 es:"
 
-<br>
 
 ```nasm
     mov eax, 7            ;Almacenamos 7
@@ -200,7 +196,6 @@ Lo que tenemos en este pedazo es lo que viene siendo la suma y la impresión del
 
 Para imprimir un carácter, es necesario pasar un dato de tipo char*, si guardaramos el resultado tal cual tendríamos un int. Cuando ejecutamos la instrucción "mov [ResSuma], eax" lo que hacemos es mover el dato 9'0' a la reserva ResSuma, y se preguntaran, ¿y los corchetes para que sirven? Bien, los corchetes indican que se modificara el valor dentro de ResSuma, es decir, si no pusiéramos esto, lo que se modificaría sería la dirección de ResSuma, así en canvio, entramos dentro de esa dirección y asignamos el valor a esa reserva. Y por último imprimimos el resultado de la suma, que seria 9.
 
-<br>
 
 ```nasm
     mov eax, 4            ;Imprimimos frase resta
@@ -213,7 +208,6 @@ Para imprimir un carácter, es necesario pasar un dato de tipo char*, si guardar
 
 Imprimimos "La resta de 7 y 2 es:"
 
-<br>
 
 ```nasm
     mov eax, 7            ;Almacenamos 7
@@ -233,7 +227,6 @@ Imprimimos "La resta de 7 y 2 es:"
 
 En esta parte hacemos lo mismo que en la anterior, movemos a EAX y EBX los valores 7 y 2 respectivamente, los restamos y le añadimos el valor '0' para convertirlo a un valor char*. Movemos el resultado a la dirección correspondiente y finalmente imprimimos el valor.
 
-<br>
 
 ```nasm
     mov eax, 4             ;Imprimimos enter
@@ -251,7 +244,6 @@ En esta parte hacemos lo mismo que en la anterior, movemos a EAX y EBX los valor
 
 Aquí lo que hacemos es imprimir el mensaje finLinea, que lo que hace como hemos comentado antes, es dar un enter para que el resultado no se vea pegado y finalmente finalizar el programa.
 
-<br>
 
 Ahora vamos a jugar un poco, y vamos a modificar en la parte de la suma:
 
@@ -275,7 +267,6 @@ add eax, '0'          ;Añadimos fin
 mov [ResSuma], eax    ;Almacenamos en ResSuma el resultado
 ```
 
-<br>
 
 Si ejecutamos una vez ya cambiado nos encontraremos con lo siguiente:
 
