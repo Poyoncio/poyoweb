@@ -7,7 +7,7 @@ date: 2017-01-12
 En el post de hoy seguiremos con las operaciones aritméticas, en este caso, seguiremos con multiplicación y división.
 
 
-### Multiplicaciones:
+### Multiplicación:
 Las multiplicaciones son parecidas a la suma y a la resta, utilizan el operador "mul" y se representa de la siguiente forma:
 
 ```nasm
