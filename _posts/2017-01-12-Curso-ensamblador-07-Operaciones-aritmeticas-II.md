@@ -232,4 +232,4 @@ Como podemos ver, el resultado que tendría que devolver sería -4, es decir una
 
 <br>
 
-Hasta aquí el post de hoy, realmente es bastante sencillo el tema de la aritmética, en el próximo post ya veremos incremento/decremento y operaciones con ingreso por pantalla, y con eso, daremos por finalizado la aritmética y comenzaremos con los flags. 
+Como podemos ver, ahora nos arroja el resultado correcto. Hasta aquí el post de hoy, realmente es bastante sencillo el tema de la aritmética, en el próximo post ya veremos incremento/decremento y operaciones con ingreso por pantalla, y con eso, daremos por finalizado la aritmética y comenzaremos con los flags. 
