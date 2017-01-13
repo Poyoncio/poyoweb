@@ -81,75 +81,75 @@ section .text
     global _start
 _start:
 
-    mov eax, 4
+    mov eax, 4             ;Imprimimos mensaje
     mov ebx, 1
     mov ecx, msgMult
     mov edx, lenMult
 
     int 0x80
 
-    mov eax, 2
+    mov eax, 2             ;Pasamos los valores para operar
     mov ebx, 2
 
-    mul ebx
-    add eax, '0'
+    mul ebx                ;Operamos
+    add eax, '0'           ;Añadimos '0' para guardar
     mov [ResMult], eax
 
-    mov eax, 4
+    mov eax, 4             ;Imprimimos resultado
     mov ebx, 1
     mov ecx, ResMult
     mov edx, 1
 
     int 0x80
 
-    mov eax, 4
+    mov eax, 4              ;Imprimimos el mensaje div 
     mov ebx, 1
     mov ecx, msgDiv
     mov edx, lenDiv
 
     int 0x80
 
-    mov eax, 8
+    mov eax, 8              ;Declaramos los valores para operar
     mov ebx, 2
     mov edx, 0
 
-    div ebx
+    div ebx                 ;Dividimos
 
-    add eax, '0'
+    add eax, '0'            ;Añadimos '0' para guardar
     mov [ResDiv], eax
 
-    add edx, '0'
+    add edx, '0'            ;Añadimos '0' para guardar
     mov [ResDivResiduo], edx
 
-    mov eax, 4
+    mov eax, 4              ;Imprimimos resultado
     mov ebx, 1
     mov ecx, ResDiv
     mov edx, 1
 
     int 0x80
 
-    mov eax, 4
+    mov eax, 4              ;Imprimimos mensaje
     mov ebx, 1
     mov ecx, msgDivResiduo
     mov edx, lenDivResiduo
 
     int 0x80
 
-    mov eax, 4
+    mov eax, 4              ;Imprimimos resultado
     mov ebx, 1
     mov ecx, ResDivResiduo
     mov edx, 1
 
     int 0x80
 
-    mov eax, 4
+    mov eax, 4              ;Damos un enter
     mov ebx, 1
     mov ecx, finLinea
     mov edx, lenfinLinea
 
     int 0x80
 
-    mov eax, 1
+    mov eax, 1              ;Exit
     mov ebx, 0
 
     int 0x80
