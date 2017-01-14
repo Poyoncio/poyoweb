@@ -4,12 +4,12 @@ title: Curso ensamblador 08. Operacions aritméticas (III)
 date: 2017-01-14
 ---
 --------------------
-En el post de hoy terminaremos de ver las operaciones aritmeticas con los incrementos y los decrementos, así que vamos a ello:
+En el post de hoy terminaremos de ver las operaciones aritméticas con los incrementos y los decrementos, así que vamos a ello:
 
 
 ### Incremento:
 
-El incremento no es más que la suma de 1 a nuestro número original, se lleva a cabo mediante el operador "inc" y es tan facil como:
+El incremento no es más que la suma de 1 a nuestro número original, se lleva a cabo mediante el operador "inc" y es tan fácil como:
 
 ```nasm
 mov eax, 2
@@ -49,11 +49,11 @@ Como se puede ver tampoco hay mucha complicación aquí.
 <br>
 <br>
 
-Les parecera una tontería haver hecho un tutorial de esto, peró es necesarió que se comprenda para cuando llegemos a los loops, ahora vamos a hacer un pequeño code que reciba datos por teclado, y que los incremente y decremente:
+Les parecera una tontería haver hecho un tutorial de esto, pero es necesario que se comprenda para cuando lleguemos a los loops, ahora vamos a hacer un pequeño code que reciba datos por teclado, y que los incremente y decremente:
 
 ```nasm
 section .data
-msgIntroducir db "Introduzca el número que quiere incrementar y decrementar: "
+msgIntroducir db "Introduzca el numero que quiere incrementar y decrementar: "
 lenmsgIntroducir equ $ - msgIntroducir
 
 msgIncremento db "El numero incrementado es: "
@@ -161,7 +161,7 @@ add eax, '0'
 mov [ResInc], eax
 ```
 
-Haviamos obtenido un número por pantalla, por tanto el número que obtenemos por pantalla es con el caracter '0', es decir, es de tipo char*, para convertirlo a int y poder operar con el, tenemos primero que restar el caracter '0', luego operar con el y finalmente volver a añadir el caracter para guardarlo.
+Habíamos obtenido un número por pantalla, por tanto el número que obtenemos por pantalla es con el carácter '0', es decir, es de tipo char*, para convertirlo a int y poder operar con el, tenemos primero que restar el caracter '0', luego operar con el y finalmente volver a añadir el carácter para guardarlo.
 
 
-Hasta aquí el último capítulo de aritmetica, no creo que en este post haya que explicar mucho más, pues no tiene mucho misterio, en el próximo post entraremos de lleno en los flags que es lo más interesante.
+Hasta aquí el último capítulo de aritmética, no creo que en este post haya que explicar mucho más, pues no tiene mucho misterio, en el próximo post entraremos de lleno en los flags que es lo más interesante.
