@@ -125,11 +125,11 @@ Para no tener que ejecutar estos comandos cada vez que quieres compilar un progr
 
 ```python
 import os 
-import system 
+import sys 
 
 fichero = str(sys.argv[1])
 
-os.system('nasm -f elf '+fichero+'.asm && ld -m elf_i386 -s -o '+fichero+' '+fichero'+.o)
+os.system('nasm -f elf '+fichero+'.asm && ld -m elf_i386 -s -o '+fichero+' '+fichero+'.o')
 os.system('./'+fichero)
 
 ```
