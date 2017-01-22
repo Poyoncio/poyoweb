@@ -161,6 +161,7 @@ Llevamos ya varios capítulos explicando la estructura básica, así que no me v
 Aquí lo que podemos ver, es que despues de la comparación, si A y B son iguales, el programa saltara a la etiqueta "Igual", si es desigual saltara a la etiqueta "Desigual" y si no se cumple ninguna de las dos saltara si o si a la etiqueta "exit".
 
 Ahora vamos a analizar la parte de la etiqueta "Igual":
+
 ```nasm
 Igual:
     mov eax, 4
