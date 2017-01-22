@@ -152,6 +152,7 @@ exit:
 ```
 
 Llevamos ya varios capítulos explicando la estructura básica, así que no me voy a detener mas a explicar las casas básicas. La única parte que nos interesa, es que hay una entrada de datos que se guarda en "numero" mas tarde se vuelca el valor de esa variable a EAX, le restamos el carácter '0' y luego ejecutamos un CMP con el valor de EAX y 2 por defecto. Y luego se ejecutara esta parte:
+
 ```nasm
     jz Igual               
     jnz Desigual           
@@ -171,9 +172,9 @@ Igual:
 
     int 0x80
 
-      jmp exit                ;Salta a exit
-```
-
+       jmp exit                ;Salta a exit
+```       
+    
 Lo que se puede observar es una simple impresión por pantalla y un JMP a la etiqueta "exit", esto se hace para que una vez terminada la ejecución de "Igual", no salte a la etiqueta "Desigual", es decir, saltara a "exit". En "exit" solo tenemos una simple llamada al sistema para finalizar el programa. La parte que me interesa que se entienda, es la de salto en función de la comparación.
 
 
