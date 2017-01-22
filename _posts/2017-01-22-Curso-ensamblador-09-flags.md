@@ -182,7 +182,7 @@ Vamos a ver como se ejecuta el programa:
 <img src="/images/captura-falso-verdadero-flags.png" />
 
 
-Como podemos observar, primero comparamos con 2, en este caso nos devolverá que son iguales porque salta a la etiqueta "Igual", una vez terminada podemos ver que nos da un salto en la consola, esto simplemente es un problema de la entrada de datos de la que no nos tenemos que preocupar. Y a continuación ejecutamos de nuevo pero en este caso con 3, y se puede observar que nos devolverá que es desigual, ya que salta en la etiqueta "Desigual".
+Como podemos observar, primero comparamos con 2, en este caso nos devolverá que son iguales porque salta a la etiqueta "Igual", una vez terminada podemos ver que nos da un salto en la consola, esto simplemente es un problema de la entrada de datos de la que no nos tenemos que preocupar. Y a continuación ejecutamos de nuevo pero en este caso con 3, y se puede observar que nos devolverá que es desigual, ya que salta en la etiqueta "Desigual". Obviamente no probaremos todas las condiciones, eso lo dejo en sus manos. 
 
 
 Hasta aquí el tutorial de hoy, no hay demasiado más que explicar, espero que se haya entendido. Dejo por [aquí](https://mega.nz/#!O9gQ2JjL!cEa1U39hEfeehfIMgCNZazbkSpA1zumyRmOKm_pUaqo) los gráficos para que puedan descargar las tablas.
