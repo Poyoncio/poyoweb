@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Curso ensamblador 09. Flags   
-date: 2017-01-14
+date: 2017-01-22
 ---
 --------------------
 
