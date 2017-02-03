@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Curso ensamblador 10. Stack
-date: 2017-01-03
+date: 2017-02-03
 ---
 --------------------
 En esta ocasion veremos que es el **stack** y como funciona. Así que comencemos:
