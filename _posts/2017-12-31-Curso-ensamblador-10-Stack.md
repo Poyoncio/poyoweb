@@ -15,7 +15,7 @@ Como se puede observar, tenemos varios "bloques", cada bloque guarda un determin
 <img src="/images/stack-22-10-ex-nasm-2.jpg" />
 
 
-Espero que se haya entendido, no es para nada complicado, pero a veces cuesta pillar el concepto. Bien, una vez explicado, vamos a continuar, los operadores que usa son push y pop, y se usan para poner y sacar de la pila respectivamente. Vamos a crear un pequeño code para ver como funcionan:
+Espero que se haya entendido, no es para nada complicado, pero a veces cuesta pillar el concepto. Bien, una vez explicado, vamos a continuar, los operadores que usa son **push** y **pop**, y se usan para poner y sacar de la pila respectivamente. Vamos a crear un pequeño code para ver como funcionan:
 
 ```nasm
 section .data
