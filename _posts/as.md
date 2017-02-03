@@ -1,3 +1,9 @@
+---
+layout: post
+title: Curso ensamblador 10. Stack
+date: 2017-01-03
+---
+--------------------
 En esta ocasion veremos que es el **stack** y como funciona. Así que comencemos:
 
 Una pila o stack es una lista ordenada de datos que funciona como acumulador, es decir, almacena datos y a medida que se van almacenando se van quedando más abajo. A continuación podemos ver una ilustración de como funciona:
