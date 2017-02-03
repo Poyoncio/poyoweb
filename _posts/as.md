@@ -1,10 +1,10 @@
 En esta ocasion veremos que es el **stack** y como funciona. Así que comencemos:
 
-Una pila o stack es una lista ordenada de datos que funciona como acumulador, es decir, almacena datos y a medida que se van almacenando se van quedando más abajo. A continuación podemos ver una ilustracion de como funciona:
+Una pila o stack es una lista ordenada de datos que funciona como acumulador, es decir, almacena datos y a medida que se van almacenando se van quedando más abajo. A continuación podemos ver una ilustración de como funciona:
 
 <img src="/images/stack-09-pop-push-nasm-facil.png" />
 
-Como se puede observar, tenemos varios "bloques", cada bloque guarda un determinado tipo de dato. Imaginemos que tenemos una caja, y en la caja tenemos 3 libros, para sacar el libro de en medio, primero tenemos que sacar el último libro que hemos puesto. Y por tanto cada vez que pongamos un nuevo libro, el libro de el final de la caja estara más lejos. Es decir, añadimos libros, y el libro que tendremos que sacar primero será el último que hemos puesto, por si no ha quedado claro, vamos a poner una segunda imagen mejor explicada:
+Como se puede observar, tenemos varios "bloques", cada bloque guarda un determinado tipo de dato. Imaginemos que tenemos una caja, y en la caja tenemos 3 libros, para sacar el libro de en medio, primero tenemos que sacar el último libro que hemos puesto. Y por tanto cada vez que pongamos un nuevo libro, el libro de el final de la caja estará más lejos. Es decir, añadimos libros, y el libro que tendremos que sacar primero será el último que hemos puesto, por si no ha quedado claro, vamos a poner una segunda imagen mejor explicada:
 
 <img src="/images/stack-22-10-ex-nasm-2.jpg" />
 
@@ -86,4 +86,4 @@ El siguiente pedazo de código es el mismo, una impresion por pantalla llamando 
     int 0x80
 ```
 
-Como seguramente habrán notado, el stack es una de las cosas más sencillas de ensamblador, puede que no vean mucho uso en los programas pequeños como los que hacemos, pero enrealidad, el stack es vital para tener cierto orden dentro de nuestro código, tal y como veremos en el próximo tuto. Esta vez quedo un poco corto el tutorial, pero los recomiendo que practiquen ustedes, para así en el próximo poder comenzar con la estructura básica de las funciones. 
+Como seguramente habrán notado, el stack es una de las cosas más sencillas de ensamblador, puede que no vean mucho uso en los programas pequeños como los que hacemos, pero enrealidad, el stack es vital para tener cierto orden dentro de nuestro código, tal y como veremos en el próximo tuto. Esta vez quedo un poco corto el tutorial, pero los recomiendo que practiquen ustedes, para así en el próximo poder comenzar con los apuntadores. 
