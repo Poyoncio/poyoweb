@@ -46,6 +46,9 @@ _start:
     int 0x80
 ```
 
+<img src="/images/captura-stack-facil-10-primero-segundo.png" />
+
+
 Bien, vamos a analizar la parte que nos interesa:
 
 ```nasm
