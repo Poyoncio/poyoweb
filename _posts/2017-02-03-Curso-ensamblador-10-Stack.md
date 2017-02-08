@@ -92,4 +92,4 @@ El siguiente pedazo de código es el mismo, una impresion por pantalla llamando 
     int 0x80
 ```
 
-Como seguramente habrán notado, el stack es una de las cosas más sencillas de ensamblador, puede que no vean mucho uso en los programas pequeños como los que hacemos, pero enrealidad, el stack es vital para tener cierto orden dentro de nuestro código, tal y como veremos en el próximo tuto. Esta vez quedo un poco corto el tutorial, pero los recomiendo que practiquen ustedes, para así en el próximo poder comenzar con los apuntadores. 
+Como seguramente habrán notado, el stack es una de las cosas más sencillas de ensamblador, puede que no vean mucho uso en los programas pequeños como los que hacemos, pero enrealidad, el stack es vital para tener cierto orden dentro de nuestro código, tal y como veremos en el próximo tuto. Esta vez quedo un poco corto el tutorial, pero los recomiendo que practiquen ustedes, para así en el próximo poder comenzar con los registros del stack.
