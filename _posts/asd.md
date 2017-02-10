@@ -57,7 +57,7 @@ _start:
 
 Bien, este programa lo que hará será imprimir una string que enviemos por la terminal como parametro con una longitud máxima de 5 caracteres. Primero compilamos y luego:
 
-<img src="/images/captura-comp-stack-init---seg-ebp-esp" />  
+<img src="/images/captura-comp-stack-init---seg-ebp-esp.png" />  
 
 Vamos a analizar el código:
 
