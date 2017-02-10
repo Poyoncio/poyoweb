@@ -1,6 +1,6 @@
 En el [anterior post](http://poyoncio.com/2017/02/03/Curso-ensamblador-10-Stack/) vimos lo que era el Stack, y cuales eran los operadores básicos, en el post de hoy, veremos los registros del stack, también conocido como **registros de índice**.
 
-Tal y como se comento anteriormente en el post de los [registros de uso general](http://poyoncio.com/2017/01/01/Curso-ensamblador-03-Registros-de-uso-general-y-mov/), existen diversos registros, diferenciados por unas cualidades especiales que poseen. Los que hoy trataremos son esenciales para el correcto funcionamiento del stack y son muy utilizados en los lenguajes de más alto nivel derivados de ensamblador. Así que, sin más dilacion, demos paso a estos registros.
+Tal y como se comento anteriormente en el post de los [registros de uso general](http://poyoncio.com/2017/01/01/Curso-ensamblador-03-Registros-de-uso-general-y-mov/), existen diversos registros, diferenciados por unas cualidades especiales que poseen. Los que hoy trataremos son esenciales para el correcto funcionamiento del stack y son muy utilizados en los lenguajes de más alto nivel derivados de ensamblador. Así que, sin más dilación, demos paso a estos registros.
 
 Los registros de índice están formados por ```ESI```, ```EDI```, ```EBP``` y ```ESP```, pero los que nosotros veremos hoy, son los dos últimos, ```EBP``` y ```ESP```:
 
@@ -12,11 +12,11 @@ Este operador se encarga de apuntar a el último elemento introducido en la pila
 <br>
 
 ###EBP (Apuntador de base)
-Este operador se encarga de almacenar una posición concreta del stack, es decir, se guarda la posicion del stack, y a partir de ahi, podemos acceder a otros valores, que esten por debajo o por encima suyo. Seguramente no lo hayan terminado de entender, así que vamos a explicarlo con una imagen:
+Este operador se encarga de almacenar una posición concreta del stack, es decir, se guarda la posición del stack, y a partir de ahí, podemos acceder a otros valores, que esten por debajo o por encima suyo. Seguramente no lo hayan terminado de entender, así que vamos a explicarlo con una imagen:
 
 <img src="/images/cap-png-pointer-ebp-image-V-ebp.png" />
 
-Como se puede observar, almacenamos ```V``` y encima ponemos ```EBP```, por tanto, esto nos permitira acceder al valor ```V``` mediante una simple operacion arítmetica, realmente, nos es tal cual lo explico, es decir, hay unos procesos internos más complejos, ahora trato de que se comprenda para que sirve cada uno.
+Como se puede observar, almacenamos ```V``` y encima ponemos ```EBP```, por tanto, esto nos permitirá acceder al valor ```V``` mediante una simple operación aritmética, realmente, nos es tal cual lo explico, es decir, hay unos procesos internos más complejos, ahora trato de que se comprenda para que sirve cada uno.
 
 
 <br>
@@ -55,9 +55,9 @@ _start:
     int 0x80
 ```
 
-Bien, este programa lo que hara será imprimir una string que enviemos por la terminal como parametro con una longitud máxima de 5 caracteres. Primero compilamos y luego :
+Bien, este programa lo que hará será imprimir una string que enviemos por la terminal como parametro con una longitud máxima de 5 caracteres. Primero compilamos y luego:
 
-<img src="/images/" /> foto de compilacion  
+<img src="/images/captura-comp-stack-init---seg-ebp-esp" />  
 
 Vamos a analizar el código:
 
@@ -65,7 +65,7 @@ Vamos a analizar el código:
     mov ebp, esp
 ```
 
-Bien, esta parte lo que hace es mover el valor actual de ```ESP``` a ```EBP``` es decir, asignar a ```EBP``` la direccion más alta en el stack. Puede resultar difícil de imaginar, pero no se preocupen, en el próximo tutorial lo detallaremos un poco más.
+Bien, esta parte lo que hace es mover el valor actual de ```ESP``` a ```EBP``` es decir, asignar a ```EBP``` la dirección más alta en el stack. Puede resultar difícil de imaginar, pero no se preocupen, en el próximo tutorial lo detallaremos un poco más.
 
 A continuación tenemos lo siguiente:
 
@@ -78,15 +78,21 @@ A continuación tenemos lo siguiente:
     int 0x80
 ```
 
-Bien, aquí podemos ver una simple llamada al sistema para imprimir por pantalla. Como se puede observar, todo es normal, hasta llegar a  ```mov ecx, [ebp + 8]```. Como comentabamos un poco más arriba, en ```EBP``` tenemos guardado la dirección del valor guardado más alto en el stack, y ustedes se preguntaran, y porque sumas a ```EBP``` el valor 8 y luego lo pasas a ```ECX``` con ```MOV```? Bien, pues realmente no se suman 8 numeros como tal, para comprender esto hay que entender el funcionamiento a un poco más bajo nivel. Cuando se guarda un valor en la pila, se reservan 4 bytes, es decir, si queremos acceder al primer valor tendríamos que hacer ```[ebp + 4]```, al segundo ```[ebp + 8]```, al tercero ```[ebp + 12]``` y así succesivamente, y ustedes se preguntaran, ¿Que nos esta contando este loco?¿Cuando hemos guardado la string pasada por linea de comando en la pila? Bien, pues esto sucede por defecto, es decir, cuando iniciamos nuestro programa, por defecto en la pila tenemos lo siguiente:
+Bien, aquí podemos ver una simple llamada al sistema para imprimir por pantalla. Como se puede observar, todo es normal, hasta llegar a  ```mov ecx, [ebp + 8]```. Como comentábamos un poco más arriba, en ```EBP``` tenemos guardado la dirección del valor guardado más alto en el stack, y ustedes se preguntaran, y porque sumas a ```EBP``` el valor 8 y luego lo pasas a ```ECX``` con ```MOV```? Bien, pues realmente no se suman 8 números como tal, para comprender esto hay que entender el funcionamiento a un poco más bajo nivel. Cuando se guarda un valor en la pila, se reservan 4 bytes, es decir, si queremos acceder al primer valor tendríamos que hacer ```[ebp + 4]```, al segundo ```[ebp + 8]```, al tercero ```[ebp + 12]``` y así sucesivamente, y ustedes se preguntaran, ¿Que nos esta contando este loco?¿Cuando hemos guardado la string pasada por linea de comando en la pila? Bien, pues esto sucede por defecto, es decir, cuando iniciamos nuestro programa, por defecto en la pila tenemos lo siguiente:
 
 <img src="stack-asm-start-line-parameterscode-x.png" />
 
-Para leer esta imagen, lo tenemos que hacer de abajo a arriba. Como podemos ver, lo primero que tenemos es la direccion de ```ESP```, en nuestro caso, lo que tenemos es ```EBP``` ya que cuando realizamos el ```mov ebp, esp``` le pasamos la dirección, a continuación en "Adress program path" tenemos lo que viene siendo lo que usamos para ejecutar nuestro programa, es decir, en nuestro caso sería ```./pila```, si modificamos en nuestro código la parte de ```mov ecx, [ebp + 8]``` por ```mov ecx, [ebp + 4]``` nos devolvera el dato que hemos usado para ejecutar el programa, es decir, en mi caso el programa esta en ~/Documentos/asm/pila, bien, pues si desde ~/Documentos ejecuto ```./asm/pila``` lo que nos devolvera será ```./asm/pila```, también hay que destacar que tenemos que modificar el buffer de ```EDX``` para que imprima todos los caracteres. Bien, si seguimos mirando la imagen, podemos ver que lo siguiente son los argumentos pasados por línea de comandos, como se puede ver, hay "Adress of Arg 1", "Adress of Arg 2" y así succesivamente, bien, nosotros mediante ```[ebp + 8]``` accedemos al argumento 1, con ```[ebp + 12]``` accedemos al argumento 2, eso en caso de que hayamos ingresado 2 argumentos, pero como nosotros hemos ingresado solo 1 ese ```[ebp + 12]``` corresponderá a los 4 bytes nulos que vienen a continuación en la imagen.
+Para leer esta imagen, lo tenemos que hacer de abajo a arriba. Como podemos ver, lo primero que tenemos es la dirección de ```ESP```, en nuestro caso, lo que tenemos es ```EBP``` ya que cuando realizamos el ```mov ebp, esp``` le pasamos la dirección, a continuación en "Adress program path" tenemos lo que viene siendo lo que usamos para ejecutar nuestro programa, es decir, en nuestro caso sería ```./pila```, si modificamos en nuestro código la parte de ```mov ecx, [ebp + 8]``` por ```mov ecx, [ebp + 4]``` nos devolverá el dato que hemos usado para ejecutar el programa, es decir, en mi caso el programa esta en ~/Documentos/asm/pila, bien, pues si desde ~/Documentos ejecuto ```./asm/pila``` lo que nos devolverá será ```./asm/pila```, también hay que destacar que tenemos que modificar el buffer de ```EDX``` para que imprima todos los caracteres, pueden probar ustedes mismos, aquí pueden ver un ejemplo:
+
+
+<img src="captura-ejemplo-asmpila-doc-ebp4.png" />
+
+
+Bien, si seguimos mirando la imagen del stack, podemos ver que lo siguiente son los argumentos pasados por línea de comandos, como se puede ver, hay "Adress of Arg 1", "Adress of Arg 2" y así sucesivamente, bien, nosotros mediante ```[ebp + 8]``` accedemos al argumento 1, con ```[ebp + 12]``` accedemos al argumento 2, eso en caso de que hayamos ingresado 2 argumentos, pero como nosotros hemos ingresado solo 1 ese ```[ebp + 12]``` corresponderá a los 4 bytes nulos que vienen a continuación en la imagen.
 
 <br>
 
-Bien, espero que lo hayan entendido, lo que falta por analizar es un simple salto de línea, para que quede un poco más estetico y la llamada para finalizar el proceso. Lo que me interesa que comprendan de este tutorial, es comenzar comprendar el funcionamiento de la pila, y como se debe de usar. Obviamente, no hemos comentado, que los ```[ ]``` són para mover el valor dentro de esa dirección, pero por si acaso lo aclaro.
+Bien, espero que lo hayan entendido, lo que falta por analizar es un simple salto de línea, para que quede un poco más estético y la llamada para finalizar el proceso. Lo que me interesa que comprendan de este tutorial, es comenzar comprendar el funcionamiento de la pila, y como se debe de usar. Obviamente, no hemos comentado, que los ```[ ]``` son para mover el valor dentro de esa dirección, pero por si acaso lo aclaro.
 
 <br>
 
