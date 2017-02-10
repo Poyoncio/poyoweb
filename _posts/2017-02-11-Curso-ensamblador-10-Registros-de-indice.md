@@ -1,3 +1,9 @@
+---
+layout: post
+title: Curso ensamblador 11. Registros de índice
+date: 2017-02-11
+---
+--------------------
 En el [anterior post](http://poyoncio.com/2017/02/03/Curso-ensamblador-10-Stack/) vimos lo que era el Stack, y cuales eran los operadores básicos, en el post de hoy, veremos los registros del stack, también conocido como **registros de índice**.
 
 Tal y como se comento anteriormente en el post de los [registros de uso general](http://poyoncio.com/2017/01/01/Curso-ensamblador-03-Registros-de-uso-general-y-mov/), existen diversos registros, diferenciados por unas cualidades especiales que poseen. Los que hoy trataremos son esenciales para el correcto funcionamiento del stack y son muy utilizados en los lenguajes de más alto nivel derivados de ensamblador. Así que, sin más dilación, demos paso a estos registros.
