@@ -22,9 +22,9 @@ Este operador se encarga de apuntar a el último elemento introducido en la pila
 
 Este operador se encarga de almacenar una posición concreta del stack, es decir, se guarda la posición del stack, y a partir de ahí, podemos acceder a otros valores, que esten por debajo o por encima suyo. Seguramente no lo hayan terminado de entender, así que vamos a explicarlo con una imagen:
 
-<img src="/images/cap-png-pointer-ebp-image-V-ebp.png" />
+<img src="/images/stack-22-10-ex-nasm-2.jpg" />
 
-Como se puede observar, almacenamos ```V``` y encima ponemos ```EBP```, por tanto, esto nos permitirá acceder al valor ```V``` mediante una simple operación aritmética, realmente, nos es tal cual lo explico, es decir, hay unos procesos internos más complejos, ahora trato de que se comprenda para que sirve cada uno.
+Aqui vamos a imaginarnos que empujamos el valor bloque 1 al stack, y encima ponemos el bloque 2, que contiene el registro ```EBP```, por tanto, esto nos permitir acceder al bloque 1 mediante una simple operación aritmética, realmente, no es tal cual lo explico, es decir, hay unos procesos internos más complejos, ahora trato de que se comprenda para que sirve cada uno. 
 
 
 <br>
