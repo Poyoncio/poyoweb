@@ -24,7 +24,7 @@ Este operador se encarga de almacenar una posición concreta del stack, es decir
 
 <img src="/images/stack-22-10-ex-nasm-2333.png" />
 
-Aqui vamos a imaginarnos que empujamos el valor bloque 1 al stack, y encima ponemos el bloque 2, que contiene el registro ```EBP```, por tanto, esto nos permitir acceder al bloque 1 mediante una simple operación aritmética, realmente, no es tal cual lo explico, es decir, hay unos procesos internos más complejos, ahora trato de que se comprenda para que sirve cada uno. 
+Aqui vamos a imaginarnos que empujamos el bloque 1 al stack, y encima ponemos el bloque 2, que contiene el registro ```EBP```, por tanto, esto nos permitir acceder al bloque 1 mediante una simple operación aritmética, realmente, no es tal cual lo explico, es decir, hay unos procesos internos más complejos, ahora trato de que se comprenda para que sirve cada uno. 
 
 
 <br>
