@@ -12,13 +12,13 @@ Los registros de índice están formados por ```ESI```, ```EDI```, ```EBP``` y `
 
 <br>
 
-###ESP (Apuntador de pila)
+### ESP (Apuntador de pila)
 
 Este operador se encarga de apuntar a el último elemento introducido en la pila, es decir, cada vez que se añade un nuevo valor a la pila, este registro aumenta, sabiendo a cada momento cual es el "TOP". Es un operador muy importante, ya que ayuda a llevar orden en nuestro código. Más adelante veremos ejemplos.
 
 <br>
 
-###EBP (Apuntador de base)
+### EBP (Apuntador de base)
 
 Este operador se encarga de almacenar una posición concreta del stack, es decir, se guarda la posición del stack, y a partir de ahí, podemos acceder a otros valores, que esten por debajo o por encima suyo. Seguramente no lo hayan terminado de entender, así que vamos a explicarlo con una imagen:
 
