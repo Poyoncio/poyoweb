@@ -104,4 +104,4 @@ Bien, espero que lo hayan entendido, lo que falta por analizar es un simple salt
 
 <br>
 
-Puede resultar un poco complejo el tema de la pila cuando se inicia el programa, pero no se preocupen, seguiremos viendo como tratar con la pila en el próximo capítulo con el **stack frame**.  
+Puede resultar un poco complejo el tema de la pila cuando se inicia el programa, pero no se preocupen, la idea de este tutorial era más que nada, para que se familiarizaran un poco con los registros de índice, en el próximo capítulo veremos los **bucles**.  
