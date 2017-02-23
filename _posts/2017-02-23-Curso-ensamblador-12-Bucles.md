@@ -48,7 +48,6 @@ Lo que se puede observar, es que primero incrementamos ```EAX``` y a continuaci�
 Vamos a ver un ultimo ejemplo, para ver más claramente el funcionamiento:
 
 ```nasm
-
 section .data
 msg db "El bucle se ha ejecutado", 0xA, 0xD
 lenmsg equ $ - msg
@@ -93,7 +92,6 @@ exit:
     mov ebx, 0
 
     int 0x80
-
 ```
 
 <img src="/images/captura-bucle-5-sehaejecutado-15-42.png" />
@@ -114,7 +112,6 @@ En esta parte vemos ```msg``` que es el dato que imprimiremos en el bucle, y ```
 Sigamos:
 
 ```nasm
-
     mov eax, 0
     mov ecx, 5
 
@@ -141,7 +138,6 @@ Aquí lo que podemos ver es que primero de todo, declaramos los parametros que u
 Y ya para terminar:
 
 ```nasm
-
 exit:
 
     mov eax, 4
