@@ -169,7 +169,3 @@ Aqui lo único que se hace es imprimir ```msg2``` para indicar que se ha termina
 <br>
 
 Bien, hasta aquí el tutorial de hoy. Antes de terminar, debo decir que existen otros tipos de loops, como es el caso de ```loope``` y ```loopz```, estos dos operadores se activan en caso que la bandera ```ZF``` sea igual a 1 y ```ECX``` sea igual a 0, y los operadores ```loopne``` y ```loopnz``` se activan en caso de que la bandera ```ZF``` sea igual a 0 y ```ECX``` sea igual a 0. Pero obviamente, estos no los explicaremos, ya que este curso es de nivel básico.
-
-<br>
-
-En el próximo tutorial veremos como funciona el manejo de archivos.
